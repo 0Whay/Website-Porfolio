@@ -17,6 +17,7 @@ body {
 }
 body.active{
     overflow-y: hidden !important;
+    touch-action: none;
 }
 /* SECTION TITLE */
  .section-title{
@@ -124,7 +125,7 @@ header.active{
 
 .burger.active {
     z-index: 10;
-    touch-action: none;
+    
 }
 
 .burger.active>span {
@@ -134,7 +135,7 @@ header.active{
 
 
 .burger {
-    touch-action: pan-y;
+    
     height: 4.4rem;
     width: 4.4rem;
     display: flex;
