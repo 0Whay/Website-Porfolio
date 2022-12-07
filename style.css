@@ -104,7 +104,7 @@ header.active{
     width: 100vw;
     background: rgb(0, 0, 0);
     background: linear-gradient(321deg, rgba(0, 0, 0, 1) 0%, rgba(26, 0, 32, 1) 25%, rgba(47, 0, 70, 1) 49%, rgba(49, 0, 116, 1) 77%, rgba(57, 0, 159, 1) 100%);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     visibility: hidden;
