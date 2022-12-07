@@ -134,6 +134,7 @@ header.active{
 
 
 .burger {
+    touch-action: pan-y;
     height: 4.4rem;
     width: 4.4rem;
     display: flex;
