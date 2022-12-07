@@ -120,6 +120,7 @@ header.active{
 .menu.active {
     visibility: visible;
     position: fixed;
+    overflow: none;
    
 }
 
