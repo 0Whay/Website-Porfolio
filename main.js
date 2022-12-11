@@ -18,6 +18,7 @@ const burgerBtn = document.querySelector('.burger');
 burgerBtn.addEventListener('click', () => {
     burgerBtn.classList.toggle('active');   
     menu.classList.toggle('active');
+    
 });
 
 const menuLinks = document.querySelectorAll('.menu-link');
