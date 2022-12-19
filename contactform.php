@@ -6,7 +6,7 @@ $mailFrom = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$mailTo = "szymonwiderka66@gmail.com";
+$mailTo = "szymonwiderka@wp.pl";
 $headers = "From: ".$mailFrom;
 $txt = "You have received an e-mail from".$name.".\n\n".$message;
 
