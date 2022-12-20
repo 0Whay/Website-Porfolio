@@ -9,6 +9,7 @@
 
 }
 
+
 body {
     font-size: 10px;
     overflow-x: hidden !important;
@@ -16,7 +17,7 @@ body {
     
 
 }
-body.active{
+.active{
     overflow-y: hidden !important;
     touch-action: none;
 }
@@ -70,7 +71,7 @@ body.active{
   }
 /* HEADER */
 
-header {
+header{
 
     display: flex;
     justify-content: space-between;

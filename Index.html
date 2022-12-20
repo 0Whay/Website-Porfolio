@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+
     <title>Whay Portfolio Website</title>
 </head>
 
 <body>
-   
+    <div id="bg">
+    <canvas id="c"></canvas>
+    <script src="script.js"></script>
+    </div>
+    
     <!-- HEADER -->
     <header class="active">
         <div class="logo">
             <img class="logo" src="images/logo2.svg" alt="website-logo">
         </div>
-        
+
         <ul class="menu" id="2">
-            
+
             <li data-key="home" class="menu-link">Home</li>
             <li data-key="projects" class="menu-link">Projects</li>
             <li data-key="about" class="menu-link">About Me</li>
-           
+
             <li data-key="contact" class="menu-link">Contact</li>
         </ul>
         <button class="burger" id="1">
@@ -47,13 +55,14 @@
         <button class="scroll-down-button">
             <div class="scroll-down-circle"> </div>
         </button>
-<!--PROJECTS-->
+        <!--PROJECTS-->
     </section>
     <main class="projects">
         <div class="section-title">
             <p class="section-title-main">Proj</p>
             <span class="section-title-sub">ects</span>
-        </div></div>
+        </div>
+        </div>
         <div class="projects-content">
             <div class="project-content-card">
                 <img class="project" src="images/render.png" alt="candle">
@@ -151,7 +160,7 @@
         </div>
     </main>
     <!--ABOUT -->
-    
+
     <div class="section-title">
         <p class="section-title-main">Who</p>
         <span class="section-title-sub">Am I?</span>
@@ -173,59 +182,60 @@
         <img class="me" src="images/me.svg" alt="me">
     </div>
     <!--TECHNOLOGIES-->
-   
+
     <div class="section-title">
         <p class="section-title-main">Techno</p>
         <span class="section-title-sub">logies</span>
-    </div> 
-  <section class="technologies-container">
-  <section class="technologies-content">
-    <div class="technologies-item">
-        <img src="images/blender-icon.svg" alt="blender">
-        <p class="technologies-item-title">Blender</p>
-
     </div>
-    <div class="technologies-item">
-        <img src="images/Visual.png" alt="visual">
-        <p class="technologies-item-title">Visual Studio</p>
+    <section class="technologies-container">
+        <section class="technologies-content">
+            <div class="technologies-item">
+                <img src="images/blender-icon.svg" alt="blender">
+                <p class="technologies-item-title">Blender</p>
 
-    </div></section>
-  </section>
-  
+            </div>
+            <div class="technologies-item">
+                <img src="images/Visual.png" alt="visual">
+                <p class="technologies-item-title">Visual Studio</p>
+
+            </div>
+        </section>
+    </section>
 
 
-  <!--CONTACT-->
-  <div class="section-title">
-    <p class="section-title-main">Contact</p>
-    <span class="section-title-sub">Me</span>
-</div>
-<section class="contact">
-    <img src="images/Contact.svg" alt="">
-    <form class="contact-form" method="post">
-        <div class="contact-form-field">
-            <label for="name">Name</label>
-            <input type="text" name="name" required>
-        </div>
-        <div class="contact-form-field">
-            <label for="email">Email</label>
-            <input type="text" name="email" required>
-        </div>
-        <div class="contact-form-field">
-            <label for="phone">Phone Number</label>
-            <input type="text" name="phone" required>
-        </div>
-        <div class="contact-form-field">
-            <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="8"> </textarea>
-        </div>
-        <button type="submit" name="submit" class="contact-form-btn">Submit</button>
-        <div class="success">
-            <strong>Success</strong>
-        </div>
-    </form>
-</section>
-<footer>Copyright &copy; 2023 Szymon Widera. All rights reserved.</footer>
-<script src="main.js"></script>
+
+    <!--CONTACT-->
+    <div class="section-title">
+        <p class="section-title-main">Contact</p>
+        <span class="section-title-sub">Me</span>
+    </div>
+    <section class="contact">
+        <img src="images/Contact.svg" alt="">
+        <form class="contact-form" method="post">
+            <div class="contact-form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="contact-form-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" required>
+            </div>
+            <div class="contact-form-field">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" required>
+            </div>
+            <div class="contact-form-field">
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="8"> </textarea>
+            </div>
+            <button type="submit" name="submit" class="contact-form-btn">Submit</button>
+            <div class="success">
+                <strong>Success</strong>
+            </div>
+        </form>
+    </section>
+    <footer>Copyright &copy; 2023 Szymon Widera. All rights reserved.</footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
