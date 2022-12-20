@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-
+    
 }
 
 
@@ -263,6 +263,7 @@ header.active{
 
 }
 .home {
+    color: rgb(127, 1, 190);
     margin-top: 3rem;
 }
 
@@ -287,7 +288,7 @@ header.active{
 }
 
 .home-icons {
-    background: black;
+    background: rgb(127, 1, 190);
     width: max-content;
     margin: 1rem auto;
     padding: 0.5rem 2rem;
@@ -456,7 +457,7 @@ header.active{
     font-size: 1.2rem;
     padding: 1.3rem;
     line-height: 1.6rem;
-    color: black;
+    color: rgb(127, 1, 190);
     text-align: justify;
 }
 .about .section-title {
