@@ -454,10 +454,15 @@ header.active{
 /* ABOUT */
 
 .about-description{
+    margin: 1.3rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+    background: linear-gradient(321deg, rgba(0, 0, 0, 1) 0%, rgba(26, 0, 32, 1) 25%, rgba(47, 0, 70, 1) 49%, rgba(49, 0, 116, 1) 77%, rgba(57, 0, 159, 1) 100%);
     font-size: 1.2rem;
     padding: 1.3rem;
     line-height: 1.6rem;
-    color: rgb(127, 1, 190);
+    color: white;
     text-align: justify;
 }
 .about .section-title {
@@ -467,7 +472,7 @@ header.active{
 .about-quote{
     display: block;
     font-size: 0.8rem;
-    color: slateblue;
+    color: white;
     margin-top: 0.5rem;
 }
 
