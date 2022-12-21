@@ -16,8 +16,8 @@ var root = {
   var hue = -0.01;
   
   // making the canvas full screen
-              c.height = window.innerHeight;
-              c.width = window.innerWidth;
+              c.height = 2000;
+              c.width = 4000;
   
   // the characters
   var konkani  = "10"
