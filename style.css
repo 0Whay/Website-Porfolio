@@ -263,7 +263,7 @@ header.active{
 
 }
 .home {
-    color: rgb(127, 1, 190);
+    
     margin-top: 3rem;
 }
 
@@ -288,7 +288,7 @@ header.active{
 }
 
 .home-icons {
-    background: rgb(127, 1, 190);
+    background: rgb(0, 0, 0);
     width: max-content;
     margin: 1rem auto;
     padding: 0.5rem 2rem;
