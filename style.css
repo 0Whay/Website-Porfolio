@@ -2,6 +2,7 @@
 
 
 * {
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -92,7 +93,7 @@ header.active{
 .logo {
     background: black;
     width: 150px;
-    height: 125px;
+    height: 150px;
 }
 
 .menu {
@@ -514,7 +515,7 @@ header.active{
 }
 
 .technologies-content {
-    background: black;
+    color: white;
     display:flex;
     justify-content: center;
     gap: 1rem;
@@ -523,12 +524,16 @@ header.active{
     flex-wrap: wrap;
     align-items: center;
 }
+.technologies-content a{
+    color: white;
+    text-decoration: none;
+}
 
 .technologies-item{
-    background: white;
+    background: linear-gradient(321deg, rgba(0, 0, 0, 1) 0%, rgba(26, 0, 32, 1) 25%, rgba(47, 0, 70, 1) 49%, rgba(49, 0, 116, 1) 77%, rgba(57, 0, 159, 1) 100%);
     width: fit-content;
     padding: 2rem;
-    box-shadow: 10px 10px 20px rgba(49, 0, 116, 1);
+    box-shadow: 10px 10px 20px rgb(105, 0, 252);
     border-radius: 1rem;
     transition: all 0.3s ease-in-out;
 
@@ -555,94 +560,17 @@ header.active{
 
 }
 /*CONTACT*/
-.success{
-
-
-   
-    visibility: hidden;
+.contact{
+    display:flex;
+    border: 1px solid red;
+    
 }
 .contact img{
-    display: none;
-}
-.contact-form{
-    border-radius: 0.7rem;
-    margin: 3rem auto;
-    width: 80%;
-    background: linear-gradient(321deg, rgba(0, 0, 0, 1) 0%, rgba(26, 0, 32, 1) 25%, rgba(47, 0, 70, 1) 49%, rgba(49, 0, 116, 1) 77%, rgba(57, 0, 159, 1) 100%);
-    padding: 0.4rem;
-}
-
-.contact-form-field{
-    margin: 1rem;
-
-}
-.contact-form label{
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-    color: white;
-}
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem 0.2rem;
-    border-radius: 0.7rem;
-    border: 1px solid rgba(49, 0, 116, 0.5);
-
-
-}
-.contact-form-btn{
-    background: rgb(93, 0, 139);
-    border: none;
-    border-radius: 1rem;
-    font-size: 1rem;
     width: 50%;
-    color: white;
-    display: block;
-    margin: 0 auto;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out ;
+    flex-flow: row wrap;
+    
 }
-.contact-form-btn:hover{
-    background: rgb(127, 1, 190);
-}
-@media only screen and (min-width: 900px) {
- .contact-form{
-    width: 65%;
- }
 
-}
-@media only screen and (min-width: 1100px) {
-    .contact img{
-        display: block;
-        width: 45%;
-    }
-    .contact{
-       display: flex;
-    }
-    .contact-form{
-        padding: 2rem;
-    }
-
-   
-   }
-   @media only screen and (min-width: 1500px) {
-    .contact{
-        width: 80%;
-        margin: 0 auto;
-
-    }}
-    @media only screen and (min-width: 1800px) {
-        .contact{
-            width: 65%;
-            margin: 0 auto;
-    
-        }
-    
-    
-    
-    }
 
 /*FOOTER*/
 
