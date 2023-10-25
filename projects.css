@@ -1,0 +1,153 @@
+/* ZOSTAJE */
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.box    {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0,0,0,75);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box a{
+    text-decoration: none;
+}
+.box::after{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,blueviolet);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+
+}
+.box::before{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,rgba(57, 0, 159, 1));
+    animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: rgba(0,0,0,75);
+    z-index: 1;
+}
+.box h2{
+    padding: 1em;
+    font-size: 4em;
+    position: relative;
+    z-index: 2;
+    color: blueviolet;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+/* ZOSTAJE */
+/* PROJECTS */
+
+
+.projects-content{
+    display: grid;
+    margin: 3rem 0rem 4 rem 0;
+    align-items: center;
+    background: black;
+}
+.project-content-card{
+    padding: 3rem;
+    
+    margin: 3rem auto;
+    width: 70%;
+    
+}
+.project-content-card img{
+    display: block;
+    margin: 0   auto;
+}
+.project-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.project-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blueviolet;
+    padding-right: 3rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid blueviolet;
+}
+.project-link:hover{
+    cursor: zoom-in;
+    filter: opacity(60%);
+}
+.project-link img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.3rem;
+
+}
+.project-description{
+    height: 150px;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    text-align: justify;
+    color: white;
+    
+}
+
+.technologies-title{
+    padding: 0.4rem;
+    border-bottom: 2px solid blueviolet;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: blueviolet;
+    padding-right: 5rem;
+}
+.technologies-icons{
+    display: flex;
+}
+.technologies-icons img{
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0.8rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects-content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-name{
+        font-size: 2rem;
+    }
+    .technologies-title{
+        font-size: 1rem;
+    }
+}
