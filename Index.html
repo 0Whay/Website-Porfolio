@@ -11,6 +11,30 @@
     <link rel="stylesheet" href="background.css">
 
     <title>Whay Portfolio Website</title>
+    <!-- skrypt otwierania zdj -->
+    <script type="text/javascript">
+        <!--
+        
+        function OtworzOkno(the_url)
+        {
+        if((parseInt(navigator.appVersion) > 3))
+        {
+        var the_window = window.open(the_url, 'the_window', 'height=1000,width=1000');
+        var screen_height = window.screen.availHeight;
+        var screen_width = window.screen.availWidth;
+        var left_point = parseInt(screen_width / 2) - 500;
+        var top_point = parseInt(screen_height / 2);
+        the_window.moveTo(left_point, top_point);
+        }
+        else
+        {
+        alert("komunikat, kiedy przegladarka nie spelnia wymogow");
+        }
+        }
+        
+        
+        -->
+        </script>
     
 </head>
 <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "ZMJMYdIcSl");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
@@ -28,11 +52,11 @@
 
         <ul class="menu" id="2">
 
-            <li data-key="home" class="menu-link">Home</li>
+            
             <li data-key="projects" class="menu-link">Projects</li>
             <li data-key="about" class="menu-link">About Me</li>
 
-            <li data-key="contact" class="menu-link">Contact</li>
+            <li data-key="home" class="menu-link">Home</li>
         </ul>
         <button class="burger" id="1">
             <span></span>
@@ -69,9 +93,8 @@
                 <img class="project" src="images/render.png" alt="candle">
                 <div class="project-info">
                     <p class="project-name">3D Model Candle Render</p>
-                    <a href="/" class="project-link">
-                        <img class="oko" src="images/oko.png" alt="oko">
-                    </a>
+                    <a class="project-link" onClick="OtworzOkno('images/render.png')"><img class="oko" src="images/oko.png"></a>
+                        
 
 
                 </div>
@@ -91,9 +114,7 @@
                 <img class="project" src="images/render 2.jpg" alt="bear">
                 <div class="project-info">
                     <p class="project-name">3D Model Teddy Bear Render</p>
-                    <a href="/" class="project-link">
-                        <img class="oko" src="images/oko.png" alt="oko">
-                    </a>
+                    <a class="project-link" onClick="OtworzOkno('images/render 2.jpg')"><img class="oko" src="images/oko.png"></a>
 
 
                 </div>
@@ -113,9 +134,7 @@
                 <img class="project" src="images/render 3.png" alt="vader">
                 <div class="project-info">
                     <p class="project-name">3D Model Darth Vader Render</p>
-                    <a href="/" class="project-link">
-                        <img class="oko" src="images/oko.png" alt="oko">
-                    </a>
+                    <a class="project-link" onClick="OtworzOkno('images/render 3.png')"><img class="oko" src="images/oko.png"></a>
 
 
                 </div>
@@ -135,14 +154,12 @@
                 <img class="project" src="images/render 4.png" alt="candle">
                 <div class="project-info">
                     <p class="project-name">3D Model Skull Render</p>
-                    <a href="/" class="project-link">
-                        <img class="oko" src="images/oko.png" alt="oko">
-                    </a>
+                    <a class="project-link" onClick="OtworzOkno('images/render 4.png')"><img class="oko" src="images/oko.png"></a>
 
 
                 </div>
                 <p class="project-description">
-                    Unfinished project of human skull. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus nulla ratione nam, deleniti modi debitis impedit pariatur exercitationem tenetur incidunt asperiores. Quia natus quaerat dignissimos voluptatibus eum maxime numquam!
+                    Unfinished project of human skull. 
                 </p>
                 <div class="project-technologies">
                     <p class="technologies-title">Technologies used:</p>

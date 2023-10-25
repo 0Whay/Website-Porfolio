@@ -399,7 +399,11 @@ header.active{
     font-weight: bold;
     color: blueviolet;
     padding-right: 3rem;
+    margin-top: 2rem;
     border-bottom: 1px solid blueviolet;
+}
+.project-link:hover{
+    cursor: pointer;
 }
 .project-link img{
     width: 1.6rem;
@@ -408,10 +412,12 @@ header.active{
 
 }
 .project-description{
+    height: 150px;
     font-size: 1.2rem;
     padding: 0.4rem;
     text-align: justify;
     color: white;
+    
 }
 
 .technologies-title{
