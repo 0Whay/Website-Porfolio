@@ -139,7 +139,7 @@ header.active{
 
 
 .burger {
-    
+    overflow: hidden;
     height: 4.4rem;
     width: 4.4rem;
     display: flex;
