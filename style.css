@@ -71,7 +71,11 @@ body {
     overflow: hidden;
   }
 /* HEADER */
+header a{
+    text-decoration: none;
+    color: white;
 
+}
 header{
 
     display: flex;
