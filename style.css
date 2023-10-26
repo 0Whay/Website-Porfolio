@@ -280,7 +280,7 @@ header.active {
 }
 
 .home {
-
+    
     margin-top: 3rem;
 }
 
@@ -295,6 +295,8 @@ header.active {
 .home-content {
     font-size: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -610,4 +612,38 @@ footer {
     filter: blur(0px);
     -webkit-filter: blur(0px);
     transform: rotateY(180deg);
+}
+.home-content h1 {
+    align-self: center;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw black;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+    
+}
+.home-content h1::before {
+    content: attr(data-text);
+    position: absolute;
+
+    width: 0%;
+    height: 100%;
+    color: blueviolet;
+    -webkit-text-stroke: 0vw transparent;
+    border-right: 2px solid blueviolet;
+    overflow: hidden;
+    animation: animate1 3s linear infinite;
+
+}
+@keyframes animate1
+{
+    0%, 10%
+    {
+        width: 0%;
+    }
+     70%, 90%
+    {
+        width: 100%;
+    }
 }
