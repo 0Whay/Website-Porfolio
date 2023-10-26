@@ -19,9 +19,7 @@
     margin: 20px;
     
 }
-.box a{
-    text-decoration: none;
-}
+
 .box::after{
     content:'';
     position: absolute;
@@ -41,6 +39,7 @@
     animation: animate 4s linear infinite;
 
 }
+
 @keyframes animate{
     0%{
         transform: rotate(0deg);
@@ -49,6 +48,7 @@
         transform: rotate(360deg);
     }
 }
+
 .box span{
     
     position: absolute;
@@ -86,7 +86,7 @@
     font-size: 4em;
     position: relative;
     z-index: 2;
-    color: blueviolet;
+    color: rgb(138, 43, 226);
 }
 
 /* ZOSTAJE */
