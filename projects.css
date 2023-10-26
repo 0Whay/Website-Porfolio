@@ -1,87 +1,95 @@
 /* ZOSTAJE */
 
-.project{
+.project {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
 }
-.box    {
+
+.box {
     position: relative;
     width: 400px;
     height: 400px;
-    background-color: rgba(0,0,0,75);
+    background-color: rgba(0, 0, 0, 75);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    
+
 }
 
-.box::after{
-    content:'';
+.box::after {
+    content: '';
     position: absolute;
     width: 600px;
     height: 600px;
-    background-image: conic-gradient(transparent, transparent, transparent,blueviolet);
+    background-image: conic-gradient(transparent, transparent, transparent, blueviolet);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 
 }
-.box::before{
-    content:'';
+
+.box::before {
+    content: '';
     position: absolute;
     width: 600px;
     height: 600px;
-    background-image: conic-gradient(transparent, transparent, transparent,rgba(57, 0, 159, 1));
+    background-image: conic-gradient(transparent, transparent, transparent, rgba(57, 0, 159, 1));
     animation: animate 4s linear infinite;
 
 }
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.box span{
-    
+.box span {
+
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    
+
     z-index: 1;
 }
-.box #p1{
+
+.box #p1 {
     background-image: url(/images/render.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box #p2{
+
+.box #p2 {
     background-image: url(/images/render\ 2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box #p3{
+
+.box #p3 {
     background-image: url(/images/render\ 3.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box #p4{
+
+.box #p4 {
     background-image: url(/images/render\ 4.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box h2{
+
+.box h2 {
     padding: 1em;
     font-size: 4em;
     position: relative;
@@ -93,30 +101,34 @@
 /* PROJECTS */
 
 
-.projects-content{
+.projects-content {
     display: grid;
     margin: 3rem 0rem 4 rem 0;
     align-items: center;
     background: black;
 }
-.project-content-card{
+
+.project-content-card {
     padding: 3rem;
-    
+
     margin: 3rem auto;
     width: 70%;
-    
+
 }
-.project-content-card img{
+
+.project-content-card img {
     display: block;
-    margin: 0   auto;
+    margin: 0 auto;
 }
-.project-info{
+
+.project-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 0.5rem;
 }
-.project-name{
+
+.project-name {
     font-size: 1.2rem;
     font-weight: bold;
     color: blueviolet;
@@ -124,26 +136,29 @@
     margin-top: 2rem;
     border-bottom: 1px solid blueviolet;
 }
-.project-link:hover{
+
+.project-link:hover {
     cursor: zoom-in;
     filter: opacity(60%);
 }
-.project-link img{
+
+.project-link img {
     width: 1.6rem;
     height: 1.6rem;
     margin: 0.3rem;
 
 }
-.project-description{
+
+.project-description {
     height: 150px;
     font-size: 1.2rem;
     padding: 0.4rem;
     text-align: justify;
     color: white;
-    
+
 }
 
-.technologies-title{
+.technologies-title {
     padding: 0.4rem;
     border-bottom: 2px solid blueviolet;
     margin-left: 0.5rem;
@@ -152,27 +167,30 @@
     color: blueviolet;
     padding-right: 5rem;
 }
-.technologies-icons{
+
+.technologies-icons {
     display: flex;
 }
-.technologies-icons img{
+
+.technologies-icons img {
     height: 2.2rem;
     width: 2.2rem;
     margin: 0.8rem;
 }
 
 @media only screen and (min-width: 1200px) {
-    .projects-content{
+    .projects-content {
         grid-template-columns: 1fr 1fr;
     }
 
-    .project-name{
+    .project-name {
         font-size: 2rem;
     }
-    .technologies-title{
+
+    .technologies-title {
         font-size: 1rem;
     }
-    
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -180,7 +198,8 @@
         width: 300px;
         height: 300px;
     }
-    .container{
+
+    .container {
         width: 300px;
         height: 300px;
     }

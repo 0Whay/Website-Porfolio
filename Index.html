@@ -14,27 +14,24 @@
     <title>Whay Portfolio Website</title>
     <!-- skrypt otwierania zdj -->
     <script type="text/javascript">
-       
-        
-        function OtworzOkno(the_url)
-        {
-        if((parseInt(navigator.appVersion) > 3))
-        {
-        var the_window = window.open(the_url, 'the_window', 'height=1000,width=1000');
-        var screen_height = window.screen.availHeight;
-        var screen_width = window.screen.availWidth;
-        var left_point = parseInt(screen_width / 2) - 500;
-        var top_point = parseInt(screen_height / 2);
-        the_window.moveTo(left_point, top_point);
+
+
+        function OtworzOkno(the_url) {
+            if ((parseInt(navigator.appVersion) > 3)) {
+                var the_window = window.open(the_url, 'the_window', 'height=1000,width=1000');
+                var screen_height = window.screen.availHeight;
+                var screen_width = window.screen.availWidth;
+                var left_point = parseInt(screen_width / 2) - 500;
+                var top_point = parseInt(screen_height / 2);
+                the_window.moveTo(left_point, top_point);
+            }
+            else {
+                alert("komunikat, kiedy przegladarka nie spelnia wymogow");
+            }
         }
-        else
-        {
-        alert("komunikat, kiedy przegladarka nie spelnia wymogow");
-        }
-        }
-        
-        
-      
+
+
+
     </script>
 
 </head>
@@ -94,25 +91,26 @@
         </div>
         <div class="projects-content">
             <div class="project">
-            <div class="container">
-                <div class="card">
-                    <div class="front">
-                            
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+
+
+                        </div>
+                        <div class="back">
+                            <h1>Candle</h1>
+
+                        </div>
+
+
 
                     </div>
-                    <div class="back">
-                        <h1>Candle</h1>
-                        
-                    </div>
-                    
-                    
 
                 </div>
-
-            </div></div>
+            </div>
             <div class="project">
                 <div class="box">
-                    
+
                     <span id="p2"></span>
                     <h2>Teddy</h2>
 
