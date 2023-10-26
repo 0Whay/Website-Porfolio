@@ -8,14 +8,15 @@
 }
 .box    {
     position: relative;
-    width: fit-content;
-    height: fit-content;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0,0,0,75);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
     
 }
 .box a{
@@ -24,8 +25,8 @@
 .box::after{
     content:'';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-image: conic-gradient(transparent, transparent, transparent,blueviolet);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
@@ -34,8 +35,8 @@
 .box::before{
     content:'';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-image: conic-gradient(transparent, transparent, transparent,rgba(57, 0, 159, 1));
     animation: animate 4s linear infinite;
 
@@ -49,11 +50,36 @@
     }
 }
 .box span{
+    
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    background: rgba(0,0,0,75);
+    
     z-index: 1;
+}
+.box #p1{
+    background-image: url(/images/render.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box #p2{
+    background-image: url(/images/render\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box #p3{
+    background-image: url(/images/render\ 3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box #p4{
+    background-image: url(/images/render\ 4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box h2{
     padding: 1em;
