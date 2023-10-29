@@ -23,7 +23,7 @@ var root = {
   var konkani  = "10"
   // converting the string into an array of single characters
   var characters = konkani.split("");
-  var font_size = 20;
+  var font_size = 25;
   var columns = c.width/font_size;    // number of columns for the rain
   var gradient = ctx.createLinearGradient(0,10, 0,200);
   // an array of drops - one per column
@@ -38,10 +38,10 @@ var root = {
       // Get the BG color based on the current time i.e. rgb(hh, mm, ss)
       // translucent BG to show trail
   
-      ctx.fillStyle = "rgba(192,192,192, 0.05)";
+      ctx.fillStyle = "rgb(55, 48, 107)";
       ctx.fillRect(0, 0, c.width, c.height);
   
-      ctx.fillStyle = "#BBB"; // grey text
+      ctx.fillStyle = "#9E4784"; // grey text
       ctx.font = font_size + "px arial";
   
       // looping over drops
@@ -49,7 +49,7 @@ var root = {
       {  
              
           // background color
-          ctx.fillStyle = "rgba(192,192,192, 1)";
+          ctx.fillStyle = "rgb(55, 48, 107)";
           ctx.fillRect(i * font_size, drops[i] * font_size,font_size,font_size);
           // a random chinese character to print
           var text = characters[Math.floor(Math.random() * characters.length)];
