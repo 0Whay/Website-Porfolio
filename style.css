@@ -811,7 +811,11 @@ footer {
 }
 @media only screen and (max-width: 1000px) {
 
-    
+    .position {
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+
     .home-image .cube div span {
         background: #FF3FA4;
         filter: drop-shadow(0 0 10px #FF3FA4);
