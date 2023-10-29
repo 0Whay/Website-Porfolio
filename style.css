@@ -207,6 +207,7 @@ header.active {
     .burger {
         display: none;
     }
+    
 
     .menu {
         position: unset;
@@ -282,19 +283,14 @@ header.active {
 }
 
 .home {
-    
+
     margin-top: 3rem;
 }
 
-.home-image {
-    margin: 0 auto;
-    height: 600px;
-    width: 80%;
-    display: block;
 
-}
 
 .home-content {
+    
     font-size: 2rem;
     text-align: center;
     display: flex;
@@ -306,16 +302,18 @@ header.active {
 .home-content span {
     font-size: 1.5rem;
     display: block;
+    margin: 1rem;
 }
 
 .home-icons {
     background: rgb(0, 0, 0);
     width: max-content;
     margin: 1rem auto;
-    padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    box-shadow: 10px 10px 20px rgb(16, 0, 37);
 
 }
 
@@ -683,5 +681,116 @@ footer {
         transform: translateY(100vh);
         opacity: 0;
     }
+   
+}
+.home-image .cube 
+{
+    position: relative;
+    z-index: 2;
+    
+}
+.home-image .cube:nth-child(2)
+{
+    z-index: 1;
+    translate: -60px -60px;
+    
+}
+.home-image .cube:nth-child(3)
+{
+    z-index: 3;
+    translate: 60px 60px;
+}
+.home-image .cube div
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    translate: calc(-70px * var(--x)) calc(-60px * var(--y));
+    
+}
+.home-image .cube div span
+{
+   position: relative;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background: #dcdcdc;
+   z-index: calc(1 * var(--i));
+   transition: 1.5s;
+   box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    
+}
+.home-image .cube div span:hover
+{
+    transition: 0s;
+    background: #FF3FA4;
+    filter: drop-shadow(0 0 30px #FF3FA4);
+}
+.home-image .cube div span::before
+{
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #fff;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 1.5s;
+}
+.home-image .cube div span:hover::before
+{
+    transition: 0s;
+    background: #DA0C81;
+
+}
+.home-image .cube div span::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 1.5s;
+}
+.home-image .cube div span:hover::after
+{
+    transition: 0s;
+    background: #940B92;
+
+}
+.home-image {
+    
+    
+    position: relative;
+    top: -80px;
+    transform: skewY(-20deg);
+    animation: animate3 5s linear infinite;
+    
+
+}
+@keyframes animate3 {
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.position {
+    
+    padding: 250px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
    
 }
