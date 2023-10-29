@@ -391,15 +391,28 @@ header.active {
 }
 
 /* ABOUT */
-
+.about 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 .about-description {
-    margin: 1.3rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+
+
+    
     width: fit-content;
     height: fit-content;
     border-radius: 2rem;
     background: linear-gradient(321deg, rgba(0, 0, 0, 1) 0%, rgba(26, 0, 32, 1) 25%, rgba(47, 0, 70, 1) 49%, rgba(49, 0, 116, 1) 77%, rgba(57, 0, 159, 1) 100%);
     font-size: 1.2rem;
-    padding: 1.3rem;
+    padding: 2rem;
     line-height: 1.6rem;
     color: white;
     text-align: justify;
@@ -509,18 +522,7 @@ header.active {
 
 }
 
-/*CONTACT*/
-.contact {
-    display: flex;
-    border: 1px solid red;
 
-}
-
-.contact img {
-    width: 50%;
-    flex-flow: row wrap;
-
-}
 
 
 /*FOOTER*/
@@ -850,3 +852,78 @@ footer {
     padding-top: 50px;
     font-size: 30px;
 }
+.cube1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate5 10s linear infinite;
+    
+}
+@keyframes animate5 {
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube1 div 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube1 div span 
+{   
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#DA0C81);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+
+
+}
+.top 
+{   
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+
+}
+.top::before
+{   
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #DA0C81;
+    transform: translateZ(-400px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px #da0c8133,
+    0 0 200px #da0c816b
+    0 0 300px #da0c81a2,
+    0 0 400px #da0c81d5,
+    0 0 500px #da0c81,
+    
+    
+    ;
+
+}
+
+
