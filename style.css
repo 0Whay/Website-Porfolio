@@ -383,6 +383,7 @@ header.active {
     .home-content {
         font-size: 3rem;
     }
+   
 
     .home-content span {
         font-size: 1.7rem;
@@ -537,6 +538,7 @@ footer {
     footer {
         font-size: 1.1rem;
     }
+    
 }
 
 
@@ -614,40 +616,7 @@ footer {
     -webkit-filter: blur(0px);
     transform: rotateY(180deg);
 }
-.home-content h1 {
-    align-self: center;
-    position: relative;
-    color: transparent;
-    -webkit-text-stroke: 0.1vw black;
-    text-transform: uppercase;
-    width: fit-content;
-    text-align: center;
-    
-}
-.home-content h1::before {
-    content: attr(data-text);
-    position: absolute;
 
-    width: 0%;
-    height: 100%;
-    color: blueviolet;
-    -webkit-text-stroke: 0vw transparent;
-    border-right: 2px solid blueviolet;
-    overflow: hidden;
-    animation: animate1 3s linear infinite;
-
-}
-@keyframes animate1
-{
-    0%, 10%
-    {
-        width: 0%;
-    }
-     70%, 90%
-    {
-        width: 100%;
-    }
-}
 
 /* Background */
 
@@ -836,5 +805,47 @@ footer {
         background: #940B92;
         filter: drop-shadow(0 0 5px #940B92);
     }
+    .home-content h2 span
+    {
+    font-size: 0.5em;
 
+}}
+.home-content h2
+{   
+    
+    text-transform: uppercase;
+    position: relative; 
+    color: #221f3b;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below -55px linear-gradient(transparent, rgba(0, 0, 0, 0.192));
+}
+.home-content h2 span
+ {  
+    padding-top: 0px;
+    font-size: 1.4em;
+    animation: animate1 5s linear infinite;
+}
+.home-content h2 span:nth-child(even)
+{
+    animation-delay: 0.4s;
+}
+@keyframes animate1 {
+    0%, 18%, 20%, 50.1%, 60%,65.1%,80%,90.1%,92%{
+        color: #221f3b;
+        text-shadow: none;
+    }
+    18.1%,20.1%, 30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color:  #940B92;
+        text-shadow: 0 0 10px #e21b8c,
+         0 0 20px #e21b8c,
+         0 0 40px #e21b8c,
+         0 0 80px #e21b8c,
+         0 0 160px #e21b8c,
+         0 0 400px #e21b8c
+        ;
+    }
+}
+.home-content span {
+    padding-top: 50px;
 }
