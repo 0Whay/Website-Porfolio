@@ -818,15 +818,15 @@ footer {
 
     .home-image .cube div span {
         background: #FF3FA4;
-        filter: drop-shadow(0 0 10px #FF3FA4);
+        filter: drop-shadow(0 0 5px #FF3FA4);
     }
     .home-image .cube div span::before{
         background: #DA0C81;
-        filter: drop-shadow(0 0 10px #DA0C81);
+        filter: drop-shadow(0 0 5px #DA0C81);
     }
     .home-image .cube div span::after{
         background: #940B92;
-        filter: drop-shadow(0 0 10px #940B92);
+        filter: drop-shadow(0 0 5px #940B92);
     }
 
 }
