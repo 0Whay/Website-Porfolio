@@ -665,7 +665,7 @@ footer {
     0 0 30px rgb(185, 49, 252),
     0 0 50px rgb(185, 49, 252);
     border-radius: 50%;
-    animation: animate2 5s linear forwards;
+    animation: animate2 6s linear forwards;
 }
 @keyframes animate2 
 {
