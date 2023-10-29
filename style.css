@@ -810,8 +810,12 @@ footer {
     .home-content h2 span
     {
     font-size: 0.5em;
-
-}}
+   
+} 
+    .me{
+        display: none;
+    }
+}
 .home-content h2
 {   
     
