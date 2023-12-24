@@ -1,7 +1,9 @@
 /* ZOSTAJE */
 
 .project {
+    min-height: 55svh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
@@ -203,5 +205,33 @@
         width: 300px;
         height: 300px;
     }
+    .opis h2 {
+        font-size: 30px;
+    }
+    .opis p {
+        font-size: 20px;
+    }
 
+}
+.opis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    
+    
+
+}
+.project h2
+{   
+    margin: 2rem;
+    
+    font-size: 45px;
+    color: blueviolet;
+
+
+}
+.opis p {
+    font-size: 30px;
+    color: white;
 }
