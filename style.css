@@ -83,6 +83,8 @@ body {
 header a {
     text-decoration: none;
     color: white;
+    
+    
 
 }
 
@@ -90,7 +92,8 @@ header {
 
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
     background-color: black;
     width: 100vw;
     height: fit-content;
@@ -108,8 +111,8 @@ header.active {
 
 .logo {
     background: black;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 100px;
 }
 
 .menu {
@@ -934,11 +937,40 @@ footer {
 .hidden {
  opacity: 0;
  filter: blur(5px);
- transform: translateX(-100%);
+ 
  transition: all 0.75s;
 }
 .show {
 opacity: 1;
 filter: blur(0px);
-transform: translateX(0);
+
 }
+.hidden:nth-child(odd) {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.75s;
+   }
+
+   .show:nth-child(odd) {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    
+}
+
+.hidden:nth-child(even) {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 0.75s;
+   }
+
+   .show:nth-child(even) {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    
+}
+
+
