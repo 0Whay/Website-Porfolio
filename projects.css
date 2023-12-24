@@ -62,7 +62,15 @@
 
     z-index: 1;
 }
+.box video {
+   
+    
+    border-radius: 50px;
+    position: absolute;
+    zoom:  36%;
 
+    z-index: 1;
+}
 .box #p1 {
     background-image: url(/images/render.png);
     background-position: center;
