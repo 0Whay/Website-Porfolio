@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    
 
 }
 
@@ -1052,4 +1053,103 @@ footer {
 .subcookiescon {
     width: 85%;
     margin: auto;
+}
+
+
+/*Gallery*/
+
+
+.projects-content h2 
+{
+    text-align: center;
+    color: #dcdcdc;
+    margin-left: 20px;
+    line-height: 22px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col 
+{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.feature-img
+{
+    width: 83%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.feature-img .projectic
+{
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+}
+.small-img-row
+{
+    display: flex;
+    background: #221f3b;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+}
+.small-img
+{
+    position: relative;
+}
+.small-img img
+{
+    width: 150px;
+}
+
+
+.play-btn
+{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+.small-img .play-btn
+{
+    width: 35px;
+}
+.video-player
+{
+    z-index: 100;
+    width: 30%;
+    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+video:focus{
+    outline: none;
+}
+.close-btn
+{
+    z-index: 100;
+position: fixed;
+top: 50px;
+right: 30px;
+width: 40px;
+cursor: pointer;
+
 }

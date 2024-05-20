@@ -241,32 +241,7 @@
 
 
             </div>
-            <div class="project hidden">
-                <h2>Ball animation</h2>
-                <div class="opis">
-
-
-                    <p>This brief animation, crafted in Blender, showcases a meticulously designed sequence where a
-                        sphere gracefully navigates through openings in mirrors. The fluid motion of the sphere and the
-                        seamless interaction with the reflective surfaces demonstrate a high level of artistry and
-                        attention to detail. Each mirror strategically guides the sphere, creating a visually satisfying
-                        and harmonious passage. This animation stands as one of my recent and most refined works,
-                        highlighting my commitment to precision and creativity in Blender's artistic realm.
-                    </p>
-                </div>
-
-            </div>
-            <div class="project hidden">
-                <div class="box">
-
-                    <video muted autoplay loop src="kula_daje_fulla0001-0116.mp4"></video>
-
-
-                </div>
-
-
-
-            </div>
+            
     </main>
     <!--PROJECTS Gallery-->
     <div class="section-title">
@@ -274,8 +249,86 @@
         <span class="section-title-sub">Gallery</span>
     </div>
     <div class="projects-content">
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <h2>#1 Project</h2>
+                    <img class="projectic" src="media/kula1.bmp" width="100%">
+                    <img src="images/play.png" class="play-btn" onclick="playVideo('media/kula_daje_fulla0001-0116.mp4')">
+                </div>
+            </div>
+             <!--<div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/pic2.png">
+                        <img src="images/play.png" class="play-btn">
+                    </div>
+                    <h2>#1 Render</h2>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/pic3.png">
+                        <img src="images/play.png" class="play-btn">
+                    </div>
+                    <h2>#2 Render</h2>
+                </div>
+                
+            </div>-->
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <h2>#2 Project</h2>
+                    <img class="projectic" src="media/ghost1.bmp" width="100%">
+                    <img src="images/play.png" class="play-btn" onclick="playVideo('media/Ghost.mp4')">
+                </div>
+            </div>
+            <!-- <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/pic2.png">
+                        <img src="images/play.png" class="play-btn">
+                    </div>
+                    <h2>#1 Render</h2>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/pic3.png">
+                        <img src="images/play.png" class="play-btn">
+                    </div>
+                    <h2>#2 Render</h2>
+                </div>
+                
+            </div>-->
+        </div>
+        
         
     </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="media/kula_daje_fulla0001-0116.mp4" type="video/mp4"> 
+        </video>
+        <img id="closeBtn" src="images/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script>
+             var videoPlayer = document.getElementById("videoPlayer");
+             var myVideo = document.getElementById("myVideo");
+             var closeBtn = ocument.getElementById("closeBtn");
+
+             function stopVideo(){
+                videoPlayer.style.display = "none";
+                closeBtn.style.display = "none";
+
+             }
+
+             function playVideo(file){
+                
+                myVideo.src = file;
+                videoPlayer.style.display = "block";
+                closeBtn.style.display = "block";
+             }
+
+    </script>
     <!--ABOUT -->
 
     <div class="section-title">
