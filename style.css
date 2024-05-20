@@ -90,14 +90,14 @@ header a {
 }
 
 header {
-
+    
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 0.5rem 1rem;
     background-color: black;
     width: 100vw;
-    min-height: 10svh;
+    min-height: 10vh;
     height: fit-content;
     position: sticky;
     top: 0;
